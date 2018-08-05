@@ -5,7 +5,7 @@ function* simpleIdGenerator () {
   }
 }
 
-export default function idizr(input, arrIdMaker) {
+module.exports = function idizr(input, arrIdMaker) {
   for (let p in input) {
     const idMaker = arrIdMaker || simpleIdGenerator()
     const val = input[p]
